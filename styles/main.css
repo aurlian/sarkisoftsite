@@ -1,0 +1,32 @@
+#bgVideo {
+  position: fixed;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+.bgImage {
+  background-image: url("../images/bg_1.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 100%; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.bg-faded {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bgGraph {
+  background-color: rgba(97, 86, 86, 1);
+  background-size: 30px 30px;
+  background-image: linear-gradient(
+      to right,
+      rgb(207, 201, 189) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgb(209, 205, 197) 1px, transparent 1px);
+}
