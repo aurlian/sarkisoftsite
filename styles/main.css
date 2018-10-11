@@ -46,3 +46,43 @@
     font-size: 3rem;
   }
 }
+
+/* contact form */
+.form-group {
+  position: relative;
+}
+
+.form-group > label {
+  position: absolute;
+  color: azure;
+  top: 0.5rem;
+  left: 0.5rem;
+  bottom: 0;
+  transition: 0.2s;
+}
+
+input:focus + label {
+  margin-left: -60px;
+}
+
+textarea:focus + label {
+  margin-left: -75px;
+}
+
+.form-control {
+  background-color: rgb(58, 57, 56, 0.3);
+}
+
+input:valid {
+  background: white;
+}
+textarea:valid {
+  background: white;
+}
+input:valid + label {
+  margin-left: -60px;
+}
+
+textarea:valid + label {
+  margin-left: -75px;
+}
